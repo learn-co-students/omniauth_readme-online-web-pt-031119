@@ -33,6 +33,8 @@ gem 'turbolinks'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+ 
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -41,6 +43,10 @@ group :development, :test do
   gem 'spring'
 
   gem 'pry'
+
+  gem 'omniauth' 
+  
+  gem 'omniauth-facebook'
 end
 
 # Access an IRB console on exception pages or by using <%= console %> in views
