@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  get 'users/name'
+
+  get 'users/email'
+
+  get 'users/image'
+
+  get 'users/uid'
+
+  get '/auth/github/callback' => 'sessions#create'
+
   root 'welcome#home'
 
   # The priority is based upon order of creation: first created -> highest priority.
